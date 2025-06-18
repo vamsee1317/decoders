@@ -1,0 +1,119 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.promoBanner{
+    background-color:rgb(233, 182, 29);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.promoBanner button{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(236, 119, 28);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+.mainNavbar{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNavbar .navList{
+    display: flex;
+    list-style: none;
+    gap: 0px 50px;
+    margin-right:60px;
+}
+
+.mainNavbar .navList li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Promo Banner */
+.promo-banner {
+  background-color: #f0b90b;
+  color: #000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.check-now-btn {
+  padding: 8px 16px;
+  background-color: #e85d04;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.check-now-btn:hover {
+  background-color: #d9480f;
+}
+
+/* Navbar */
+.main-navbar {
+  background-color: #202020;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #f0b90b;
+}

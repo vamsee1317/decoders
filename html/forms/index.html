@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <!-- Form and Types of inputs -->
+
+    <form action="#" style="padding: 80px 40px;" method="">
+
+        <!-- Input Types for text info -->
+
+        <!-- First Name -->
+        <!-- <label for="firstName">First Name : </label> -->
+        <input type="text" id="firstName" placeholder="Enter FirstName" autofocus minlength="3" maxlength="10"> <br><br>
+        <!-- Last Name -->
+        <label for="lastName">Last Name : </label>
+        <input type="text" id="lastName">  <br><br>
+
+        <!-- Email -->
+         <label for="email">Email : </label>
+         <input type="email" id="email"><br><br>
+        
+        <!-- Phone Number -->
+         <label for="phoneNumber">Phone Number : </label>
+         <input type="tel" id="phoneNumber"><br><br>
+
+         <!-- Age -->
+          <label for="age">Age :</label>
+          <input type="number" id="age"><br><br>
+
+        <!-- Password -->
+         <label for="password">Password</label>
+         <input type="password" name="password" id="password"><br><br>
+
+        <!--Date of Birth  -->
+        <label for="dob">Date Of Birth</label>
+        <input type="datetime-local" name="dob" id="dob"><br><br>
+
+        <!-- Website URL -->
+         <label for="website">Website : </label>
+         <input type="url" id="website"><br><br>
+        
+        <!-- Search -->
+         <label for="search">Search : </label>
+         <input type="search" id="search"><br><br>
+
+        <!-- Color Pickers -->
+         <label for="color">Select the color : </label>
+         <input type="color" name="color" id="color"><br><br>
+
+        <!-- Range -->
+         <label for="range">Price Range : </label>
+         <input type="range" name="range" id="range" min="100" max="1000" step="100"><br><br>
+
+        <!-- file -->
+         <label for="resume">Upload resume :</label>
+         <input type="file" name="resume" id="resume"><br><br>
+
+        <!-- Radio Buttons  -->
+         <label for="gender">gender : </label>
+
+         <input type="radio" id="male"  name="gender">
+         <label for="male" value="male">Male</label>
+
+         <input type="radio" id="female" name="gender">
+         <label for="female"  value="female">Female</label>
+
+         <input type="radio" id="other" name="gender">
+         <label for="other"  value="other">Others</label><br><br>
+
+        <!-- Checkbox -->
+         <label for="hobbies">hobbies : </label>
+
+         <input type="checkbox" name="hobbies" id="cricket" value="cricket">
+         <label for="cricket">cricket</label>
+
+         <input type="checkbox" name="hobbies" id="reading" value="reading">
+         <label for="reading">Reading</label>
+
+         <input type="checkbox" name="hobbies" id="watchingMovies" value="watchingMovies">
+         <label for="watchingMovies">watchingMovies</label>
+
+         <input type="checkbox" name="hobbies" id="cycling" value="cycling">
+         <label for="cycling">cycling</label> <br><br>
+
+         <input type="text" value="" readonly>
+
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
+
+    </form>
+    
+
+    <!-- <script>
+        // form validation
+
+        const firstName = document.getElementById("firstName").innerText= "";
+
+        if(firstName.lenght > 3 && firstName.length <= 10 === ""){
+            alert("Please enter your first name");
+        }else{
+            alert("First name is valid");
+        }
+    </script> -->
+</body>
+</html>

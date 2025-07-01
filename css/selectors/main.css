@@ -109,7 +109,7 @@ h2, h3 {
 
 /* ========== ADJACENT SIBLING SELECTOR ========== */
 h2 + div {
-  border-top: 2px dashed #ccc;
+  border-top: 2px solid #ccc;
   margin-top: 10px;
   padding-top: 10px;
 }

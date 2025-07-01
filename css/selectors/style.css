@@ -75,3 +75,40 @@ header[id="main-header"]{
 div[id="main-header"]{
     background-color: #d80e0e;
 }
+
+/* Combinations Selectors */
+
+/* Inside the parent */
+
+/* Descendant */
+
+.header .navbar li{
+    background-color: #d80e0e;
+    margin: 10px;
+
+}
+
+/* Child */
+header>.nav-list>li>a{
+    background-color: #d80e0e;
+    margin: 10px;
+}
+
+.footer>.nav-list>li>a{
+    background-color: #36d80e;
+    margin: 10px;
+}
+
+
+/* Outside the parent */
+
+/* Adjacent Sibling ( + ) */
+
+header + #categories>h2{
+    background-color: blue;
+}
+
+/* General Sibling */
+header + section{
+    background-color: #d80e0e;
+}

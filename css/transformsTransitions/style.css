@@ -1,0 +1,49 @@
+/* 
+
+    Tranform : 
+    Transform is nothing change in an element or style from one state to another state.
+
+    Transition :
+    The process of changing from one state to another state is called transition.
+
+*/
+
+.container{
+    height: 400px;
+    width: 90%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.container .box{
+    height: 100px;
+    width: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    color: white;
+    font-size: xx-large;
+    /* transform: rotate(90deg);
+    transform: scale(2);
+    transform: skew(30deg);
+    transform: matrix(); */
+
+    /* transform: translate(-50%, -50%); */
+    /* transition-property:all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0,.97,1,0);
+    transition-delay: 2s; */
+    transition: all 2s cubic-bezier(0,.97,1,0) 2s;
+}
+
+.container .box:hover{
+    height: 200px;
+    width: 200px;
+    background-color: #ee1010;
+}

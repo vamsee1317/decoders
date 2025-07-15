@@ -1,0 +1,184 @@
+/* Media queries in CSS allow web designers to apply different styles to a website based on the characteristics of the device or browser being used to view the website. This allows designers to create responsive designs that adapt to different screen sizes, orientations, resolutions, and other characteristics.
+
+Media queries are written as conditional statements that target specific ranges of viewport sizes, such as min-width and max-width, as well as other features like resolution, orientation, and device type. When a user's device matches the conditions specified in a media query, the styles within that query are applied.
+
+For example, a media query may be used to apply different styles to a website when it is viewed on a mobile device versus a desktop or tablet. This can include changing the layout, font sizes, colors, and other design elements to ensure that the website looks and functions correctly on different devices.
+
+Media queries are an essential tool for creating responsive web designs that provide a consistent and user-friendly experience across a wide range of devices and screen sizes. By using media queries effectively, designers can accommodate the needs of users who may access their websites on smartphones, tablets, laptops, desktops, and other devices. */
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  body{
+    /* background-color: rgb(11, 186, 213); */
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  body{
+    /* background-color: blue; */
+  }  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  body{
+    /* background-color: #25a11a; */
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+
+  body{
+    /* background-color: #ac3a3a; */
+  }
+  
+}
+
+
+
+
+/* MOBILE-FIRST DESIGN */
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Basic Profile Card Styles */
+.profileCard {
+    width: 90%; /* Use percentage for better mobile fitting */
+    max-width: 300px;
+    margin: 10px;
+    background-color: rgb(241, 238, 238);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+}
+
+.profileCard:hover {
+    background-color: rgb(245, 242, 242);
+    transform: scale(1.03);
+}
+
+/* Profile Image Styling */
+.profileCard img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+/* Text Styling */
+.profileCard h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profileCard p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Button Styling */
+.profileCard button {
+    padding: 6px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ============================== */
+/* TABLET VIEW (min-width: 600px) */
+/* ============================== */
+@media (min-width: 600px) {
+    .profileContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profileCard {
+        width: 45%;
+    }
+}
+
+/* ============================== */
+/* DESKTOP VIEW (min-width: 900px) */
+/* ============================== */
+@media (min-width: 900px) {
+    .profileCard {
+        width: 250px;
+    }
+
+    .profileCard h2 {
+        font-size: 24px;
+    }
+
+    .profileCard p {
+        font-size: 18px;
+    }
+
+    .profileCard button {
+        padding: 8px 32px;
+        font-size: 16px;
+    }
+}

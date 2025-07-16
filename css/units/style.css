@@ -1,0 +1,52 @@
+/* 
+
+    CSS Units : 
+
+    px
+    %
+    vw
+    vh
+
+    em
+    rem
+
+    - Absolute Units :
+    - Relative Units :
+
+
+*/
+
+body{
+    font-size: 16px;
+}
+
+.container{
+    border: 1px solid black;
+    width: 50%;
+    height: 600px;
+    font-size: 30px;
+}
+
+.parent{
+    /* width: 500px;
+    height: 100px;
+    background-color: red; */
+    font-size: 2rem;
+}
+
+.child{
+    /* width: 50%;
+    height: 50%;
+    background-color: aqua; */
+        font-size: 3em;
+}
+.child p{
+    font-size: 3em;
+}
+
+.subChild{
+    /* width: 50vw;
+    height: 25vh;
+    background-color: blue; */
+    font-size: 1rem;
+}
